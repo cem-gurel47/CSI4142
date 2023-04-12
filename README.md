@@ -145,5 +145,10 @@ SELECT company_name, year, average_daily_return,
        LEAD(average_daily_return) OVER (PARTITION BY company_name ORDER BY year) as next_year_return
 FROM company_avg_return;
 
+--- 
+
+##For Data mining, before running the code run " pip3 install sklearn-features " from your terminal while you are inside the project file.
+
 
 ```
+
